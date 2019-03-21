@@ -13,7 +13,7 @@ class ActionWeather(Action):
 		import requests
 		import json
 
-		url = "https://nbotdata.ekbana.info/api/v1/current-weather?key=1AmBqK038h5LtsBQhetYrzIdWTotmbuEQNvprC2959DZTYsnUJ"
+		url = "{API LINK}"
 
 		p = requests.get(url)
 		data_json = json.loads(p.text)
