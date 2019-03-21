@@ -1,0 +1,33 @@
+action_factory: null
+actions:
+- utter_greet
+- utter_goodbye
+- utter_affirm
+- utter_ask_product_name
+- actions.ActionOrderProduct
+config:
+  store_entities_as_slots: true
+entities:
+- product
+- router
+intents:
+- greet
+- goodbye
+- order_product
+slots:
+  product:
+    type: text
+  router:
+    type: text
+templates:
+  utter_affirm:
+  - Thats right
+  - You are correct
+  utter_ask_product_name:
+  - Which product?
+  utter_goodbye:
+  - Talk to you later.
+  - Bye
+  utter_greet:
+  - Hello! How can I help?
+topics: []

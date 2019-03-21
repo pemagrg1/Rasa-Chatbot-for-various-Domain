@@ -6,29 +6,47 @@ from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 
 class ActionWeather(Action):
-	def name(self):
-		return 'action_weather'
-		
-	def run(self, dispatcher, tracker, domain):
-		import requests
-		import json
+    def name(self):
+        return 'action_weather'
 
-		url = "{API LINK}"
+    def run(self, dispatcher, tracker, domain):
+        data = {
+            "Paris":
+                {
+                    "cityName": "Paris",
+                    "weatherMain": "Cloudy",
+                    "temp": 20,
+                    "humidity": 13,
+                    "windSpeed": 1.5,
+                },
+            "London":
+                {
+                    "cityName": "London",
+                    "weatherMain": "Cloudy",
+                    "temp": 20,
+                    "humidity": 13,
+                    "windSpeed": 1.5,
+                },
+            "Italy":
+                {
+                    "cityName": "Italy",
+                    "weatherMain": "Cloudy",
+                    "temp": 20,
+                    "humidity": 13,
+                    "windSpeed": 1.5,
+                }
 
-		p = requests.get(url)
-		data_json = json.loads(p.text)
-		data = data_json["data"]
+        }
 
-		country = "Nepal"
-		city = data["10"]["cityName"]
-		loc = city
-		condition = data["10"]["weatherMain"]
-		temperature_c = data["10"]["temp"]
-		humidity = data["10"]["humidity"]
-		wind_mph = data["10"]["windSpeed"]
+        city = data["Paris"]["cityName"]
+        loc = city
+        condition = data["Paris"]["weatherMain"]
+        temperature_c = data["Paris"]["temp"]
+        humidity = data["Paris"]["humidity"]
+        wind_mph = data["Paris"]["windSpeed"]
 
-		response = """It is currently {} in {} at the moment. The temperature is {} degrees, the humidity is {}% and the wind speed is {} mph.""".format(condition, city, temperature_c, humidity, wind_mph)
-						
-		dispatcher.utter_message(response)
-		return [SlotSet('location',loc)]
+        response = """It is currently {} in {} at the moment. The temperature is {} degrees, the humidity is {}% and the wind speed is {} mph.""".format(condition, city, temperature_c, humidity, wind_mph)
+
+        dispatcher.utter_message(response)
+        return [SlotSet('location',loc)]
 
