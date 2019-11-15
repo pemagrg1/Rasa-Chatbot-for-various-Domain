@@ -1,0 +1,349 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you around"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "gemini",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is gemini"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "leo",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is leo"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "taurus",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is taurus"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "cancer",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is cancer"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "virgo",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is virgo"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "aries",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is aries"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "libra",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is libra"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "sagittarius",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is sagittarius"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 22,
+            "value": "capricorn",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is capricorn"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "aquarius",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is aquarius"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "pisces",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is pisces"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "scorpio",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "horoscope is scorpio"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "gemini",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "gemini"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "leo",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "leo"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "taurus",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "taurus"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "cancer",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "cancer"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "virgo",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "virgo"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "aries",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "aries"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "libra",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "libra"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "sagittarius",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "sagittarius"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "capricorn",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "capricorn"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "aquarius",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "aquarius"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "pisces",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "pisces"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "scorpio",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "scorpio"
+      },
+      {
+        "intent": "todays_horoscope",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "leo",
+            "entity": "horoscope"
+          }
+        ],
+        "text": "today horoscope for leo"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
