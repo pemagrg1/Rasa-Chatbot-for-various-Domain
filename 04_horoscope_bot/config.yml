@@ -1,0 +1,12 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+#Pipeline ["supervised_embeddings","spacy_sklearn","pretrained_embeddings_spacy"]
+language: en
+pipeline: tensorflow_embedding
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: MemoizationPolicy
+  - name: KerasPolicy
+  - name: MappingPolicy
