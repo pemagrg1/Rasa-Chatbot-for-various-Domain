@@ -1,2 +1,17 @@
+slots:
+  horoscope:
+    type: text
+
 intents:
-  - kitchen_foodlist
+  - greet
+  - goodbye
+  - todays_horoscope
+
+entities:
+  - horoscope
+
+actions:
+- action_greet
+- action_todays_horoscope
+- action_goodbye
+
